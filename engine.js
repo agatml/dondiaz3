@@ -16,4 +16,5 @@ toggleButton.addEventListener('click', () => {
 // Persistência
 if (localStorage.getItem('theme') === 'dark') {
     rootElement.setAttribute('data-theme', 'dark');
-}
+};
+

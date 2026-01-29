@@ -58,10 +58,64 @@ body {
 .logo img {
   max-height: 70px;
 }
-.nav ul {
-  display: none;
-  list-style: none;
+
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* MENU MOBILE (FECHADO) */
+.nav {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background: #111;
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav li {
+  border-top: 1px solid #222;
+}
+
+.nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background: #222;
+}
+
+/* MENU ATIVO */
+.nav.active {
+  display: block;
+}
+
+
 .nav a {
   color: #fff;
   text-decoration: none;
@@ -331,6 +385,30 @@ iframe {
     
   } */
 
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    display: block !important;
+    width: auto;
+    background: none;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav li {
+    border: none;
+  }
+
+  .nav a {
+    padding: 0;
+  }
 
 
   
