@@ -18,3 +18,4 @@ if (localStorage.getItem('theme') === 'dark') {
     rootElement.setAttribute('data-theme', 'dark');
 };
 
+ 

@@ -48,6 +48,8 @@ body {
 .header {
   background: var(--header-bg);
   color: var(--header-text);
+  position: relative;
+  z-index: 1000;
 }
 .header-content {
   display: flex;
@@ -58,7 +60,6 @@ body {
 .logo img {
   max-height: 70px;
 }
-
 
 .menu-toggle {
   background: none;
@@ -85,6 +86,8 @@ body {
   width: 100%;
   background: #111;
   display: none;
+  z-index: 1100;
+  
 }
 
 .nav ul {
@@ -114,7 +117,6 @@ body {
 .nav.active {
   display: block;
 }
-
 
 .nav a {
   color: #fff;
@@ -297,7 +299,6 @@ td {
 
 /* CONTATO */
 .redes {
-  
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -309,7 +310,6 @@ iframe {
   border: 0;
   margin: 0 0 10%; /* remove aquele espaço enorme embaixo */
 }
-
 
 .redes-sociais {
   display: flex;
@@ -379,12 +379,11 @@ iframe {
     display: flex;
   }
 
-/* 
+  /* 
   iframe {
     height: 350px;
     
   } */
-
 
   .menu-toggle {
     display: none;
@@ -410,36 +409,33 @@ iframe {
     padding: 0;
   }
 
+  iframe {
+    margin: 0 0 5rem;
+    display: flex;
+    max-width: 50%;
+  }
 
-  
-iframe {
-  margin: 0 0 5rem;
-  display: flex;
-  max-width: 50%
-}
+  .redes {
+    display: flex;
+  }
 
-.redes {
-  display: flex;
-}
-
-.redes-sociais {
-  margin-top: 7%;
-}
-
+  .redes-sociais {
+    margin-top: 7%;
+  }
 
   .hero-content h1 {
     font-size: 2.2rem;
   }
 
   .sobre-imagem-secundaria {
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
-  margin-top: 1rem;
-}
-.sobre-imagem-secundaria img {
-  max-width: 150px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1rem;
+  }
+  .sobre-imagem-secundaria img {
+    max-width: 150px;
+  }
 }
 
 /* Desktop */
@@ -466,14 +462,14 @@ iframe {
   }
 
   .sobre-imagem-secundaria {
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
-  margin-top: 1rem;
-}
-.sobre-imagem-secundaria img {
-  max-width: 150px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1rem;
+  }
+  .sobre-imagem-secundaria img {
+    max-width: 150px;
+  }
 
   html {
     font-size: 25px;
@@ -484,6 +480,6 @@ iframe {
   }
 
   #contato.section {
-  padding: 75px 0 0;
+    padding: 75px 0 0;
   }
 }
