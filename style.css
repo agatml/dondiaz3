@@ -218,7 +218,6 @@ h2 {
   border: 1px solid var(--border-color);
   text-align: center;
   min-width: 40px;
-
 }
 
 .card img {
@@ -302,14 +301,14 @@ iframe {
 /* Tablet */
 
 /* MOBILE (padrão) */
-.redes {
+/* .redes {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
+} */
 
 /* TABLET+ */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .redes {
     flex-direction: row;
     align-items: center;
@@ -320,7 +319,7 @@ iframe {
     width: 50%;
     height: 320px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .nav ul {
@@ -329,14 +328,33 @@ iframe {
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    display: flex; }
-  .redes {
-    flex-direction: row;
-    align-items: center;
+    display: flex;
   }
+
+/* 
   iframe {
     height: 350px;
-  }
+    
+  } */
+
+
+
+  
+iframe {
+  margin: 0 0 5rem;
+  display: flex;
+  max-width: 50%
+}
+
+.redes {
+  display: flex;
+}
+
+.redes-sociais {
+  margin-top: 7%;
+}
+
+
   .hero-content h1 {
     font-size: 2.2rem;
   }
@@ -366,10 +384,14 @@ iframe {
   }
 
   html {
-  font-size: 25px;
-}
+    font-size: 25px;
+  }
 
-.card {
-  min-width: 400px;
-}
+  .card {
+    min-width: 400px;
+  }
+
+  #contato.section {
+  padding: 75px 0 0;
+  }
 }
