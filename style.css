@@ -217,6 +217,7 @@ h2 {
   border-radius: 6px;
   border: 1px solid var(--border-color);
   text-align: center;
+  min-width: 40px;
 }
 
 .card img {
@@ -360,4 +361,12 @@ iframe {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  html {
+  font-size: 25px;
+}
+
+.card {
+  min-width: 400px;
+}
 }
