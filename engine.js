@@ -19,3 +19,22 @@ if (localStorage.getItem('theme') === 'dark') {
 };
 
  
+
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  // Rolando para baixo → esconde
+  if (currentScroll > lastScroll && currentScroll > 80) {
+    header.classList.add("header-hidden");
+  } 
+  // Rolando para cima → mostra
+  else {
+    header.classList.remove("header-hidden");
+  }
+
+  lastScroll = currentScroll;
+});
+
