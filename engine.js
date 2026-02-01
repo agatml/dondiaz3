@@ -1,3 +1,4 @@
+// tema
 const toggleButton = document.getElementById('theme-toggle');
 const rootElement = document.documentElement;
 
@@ -13,13 +14,13 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
-// Persistência
+
 if (localStorage.getItem('theme') === 'dark') {
     rootElement.setAttribute('data-theme', 'dark');
 };
 
  
-
+// header
 let lastScroll = 0;
 const header = document.querySelector("header");
 
