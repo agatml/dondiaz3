@@ -9,4 +9,6 @@ function showNextSlide() {
   slides[currentIndex].classList.add('active');
 }
 
-setInterval(showNextSlide, 2500); // troca a cada 5s
+showNextSlide();
+
+setInterval(showNextSlide, 2500); 
