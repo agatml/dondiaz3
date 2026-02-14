@@ -42,7 +42,6 @@ body {
   padding-top: 80px; /* altura do header */
 }
 
-
 .container {
   width: 100%;
   padding: 0 1rem;
@@ -186,10 +185,12 @@ body {
 .hero-content h1 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  cursor: default;
 }
 .hero-content p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  cursor: default;
 }
 
 [data-theme="dark"] {
@@ -243,7 +244,6 @@ body {
   font-size: 0.7rem;
 }
 
-
 /* SECTIONS */
 .section {
   padding: 3rem 0;
@@ -254,6 +254,7 @@ body {
 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
+  cursor: default;
 }
 
 /* SOBRE */
@@ -268,6 +269,7 @@ h2 {
 }
 .sobre-texto p {
   color: var(--text-secondary);
+  cursor: default;
 }
 .sobre-imagem-secundaria {
   display: flex;
@@ -280,13 +282,13 @@ h2 {
 }
 
 /* GRID */
+
 .grid {
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  
+  gap: 1rem;
 }
-
-
 
 .card {
   background: var(--card-bg);
@@ -294,12 +296,12 @@ h2 {
   border-radius: 6px;
   border: 1px solid var(--border-color);
   text-align: center;
-  min-width: 40px;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 300px;
   margin-bottom: 20px;
-  
+  cursor: default;
 }
-
-
 
 .card img {
   width: 100%;
@@ -317,6 +319,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   background: var(--card-bg);
+  cursor: default;
 }
 th,
 td {
@@ -369,6 +372,7 @@ iframe {
   color: #fff;
   text-align: center;
   padding: 2rem;
+  cursor: default;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -402,31 +406,60 @@ iframe {
     gap: 2rem;
   }
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
   }
 
   .btn-primary {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 4px;
-}
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
 
-  /* 
-  iframe {
-    height: 350px;
-    
-  } */
+  .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .card img {
+    max-width: 200px;
+    min-height: 170px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    min-width: 40px;
+    margin-bottom: 20px;
+    cursor: default;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 160px;
+    max-height: 160px;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+  }
+
 
   .hero-content h1 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-.hero-content p {
-  margin-bottom: 1.5rem;
-}
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    margin-bottom: 1.5rem;
+  }
 
   .menu-toggle {
     display: none;
@@ -470,7 +503,6 @@ iframe {
     font-size: 2.2rem;
   }
 
-  
   .sobre-imagem-secundaria {
     display: flex;
     justify-content: center;
@@ -491,26 +523,53 @@ iframe {
     height: 110px;
   }
 
+  .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    min-width: 40px;
+    margin-bottom: 20px;
+    cursor: default;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 160px;
+    max-height: 160px;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+  }
+
   .btn-primary {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 4px;
-}
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
 
   .hero-content h1 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-.hero-content p {
-  margin-bottom: 1.5rem;
-}
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    margin-bottom: 1.5rem;
+  }
 
   .carousel-slide img {
     height: 100%;
-    object-fit: cover;}
-
+    object-fit: cover;
+  }
 
   .logo img {
     max-height: 85px;
@@ -522,9 +581,11 @@ iframe {
     flex-direction: row;
     align-items: center;
   }
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    display: flex;
+  #instrutores .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   .sobre-imagem-secundaria {
@@ -549,8 +610,6 @@ iframe {
     max-width: 200px;
     max-height: 150px;
   }
-
-
 
   #contato.section {
     padding: 75px 0 0;
