@@ -36,16 +36,14 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
-  padding-top: 80px; 
+  padding-top: 80px;
 }
-
 
 .container {
   width: 100%;
   padding: 0 1rem;
   margin: auto;
 }
-
 
 .header {
   background: var(--header-bg);
@@ -57,8 +55,6 @@ body {
   transition: transform 0.3s ease;
   z-index: 1000;
 }
-
-
 
 .header-hidden {
   transform: translateY(-100%);
@@ -303,6 +299,17 @@ h2 {
   cursor: default;
 }
 
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .card img {
   width: 100%;
   max-width: 160px;
@@ -451,7 +458,6 @@ iframe {
     margin-bottom: 1rem;
     border-radius: 5%;
   }
-
 
   .hero-content h1 {
     font-size: 1.6rem;
