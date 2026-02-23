@@ -36,11 +36,9 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
+  padding-top: 80px; 
 }
 
-body {
-  padding-top: 80px; /* altura do header */
-}
 
 .container {
   width: 100%;
@@ -48,7 +46,7 @@ body {
   margin: auto;
 }
 
-/* HEADER */
+
 .header {
   background: var(--header-bg);
   color: var(--header-text);
@@ -60,7 +58,8 @@ body {
   z-index: 1000;
 }
 
-/* Classe que esconde o header */
+
+
 .header-hidden {
   transform: translateY(-100%);
 }
@@ -241,7 +240,8 @@ body {
 }
 
 .btn-primary {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 /* SECTIONS */
