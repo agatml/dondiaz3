@@ -337,7 +337,6 @@ td {
   font-size: 14px;
 }
 
-
 .redes {
   flex-direction: row;
   align-items: center;
@@ -372,8 +371,6 @@ iframe {
   font-size: 1.4rem;
 }
 
-
-
 .footer {
   background: #000;
   color: #fff;
@@ -381,7 +378,6 @@ iframe {
   padding: 2rem;
   cursor: default;
 }
-
 
 @media (min-width: 768px) {
   .nav ul {
@@ -630,25 +626,102 @@ iframe {
   }
 
   .card {
-
     max-width: 600px;
     min-width: 350px;
     min-height: 500px;
-    
   }
 
   .card img {
-  min-width: 260px;
-  min-height: 250px;
+    min-width: 260px;
+    min-height: 250px;
+  }
+
+  td {
+    font-size: 0.9rem;
+  }
+
+  .container.redes {
+    padding: 0;
+  }
 }
 
+@media (min-width: 3840px) {
+  html {
+    font-size: 40px;
+  }
 
-td {
-  font-size: 0.9rem;
-}
+  .header-content {
+    height: 6rem;
+    padding: 0;
+  }
 
-.container.redes {
-  padding: 0;
-}
+  .container.header-content {
+    min-width: 1400px;
+  }
 
+  .logo img {
+    max-height: 160px;
+  }
+
+  .theme-switch {
+    width: 70px;
+    height: 40px;
+  }
+
+  [data-theme="dark"] .switch-thumb {
+    left: 34px;
+  }
+
+  .switch-thumb {
+    width: 30px;
+    height: 30px;
+  }
+
+  .container {
+    min-width: 1200px;
+    max-width: 1500px;
+  }
+
+  .sobre-imagem-secundaria {
+    gap: 5rem;
+  }
+  .sobre-imagem-secundaria img {
+    max-width: 200px;
+  }
+  .card {
+    max-width: 600px;
+    min-width: 350px;
+    min-height: 500px;
+  }
+
+  .card img {
+    min-width: 260px;
+    min-height: 250px;
+  }
+
+  #instrutores .card {
+    max-width: 700px;
+    min-width: 500px;
+    min-height: 700px;
+  }
+
+  #instrutores .card img {
+    min-width: 400px;
+    min-height: 400px;
+  }
+
+  td {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  .container.redes {
+    padding: 0;
+  }
+
+ 
 }
