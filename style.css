@@ -337,7 +337,7 @@ td {
   font-size: 14px;
 }
 
-/* CONTATO */
+
 .redes {
   flex-direction: row;
   align-items: center;
@@ -372,10 +372,7 @@ iframe {
   font-size: 1.4rem;
 }
 
-.redes i {
-  margin-right: 20px;
-  font-size: 1.6rem;
-}
+
 
 .footer {
   background: #000;
@@ -385,30 +382,6 @@ iframe {
   cursor: default;
 }
 
-/* ===== MEDIA QUERIES ===== */
-
-/* Tablet */
-
-/* MOBILE (padrão) */
-/* .redes {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-} */
-
-/* TABLET+ */
-/* @media (min-width: 768px) {
-  .redes {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  iframe {
-    width: 50%;
-    height: 320px;
-  }
-} */
 
 @media (min-width: 768px) {
   .nav ul {
@@ -627,4 +600,55 @@ iframe {
   #contato.section {
     padding: 75px 0 0;
   }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 30px;
+  }
+
+  .header-content {
+    height: 5rem;
+  }
+
+  .logo img {
+    max-height: 120px;
+  }
+
+  .theme-switch {
+    width: 60px;
+    height: 30px;
+  }
+
+  [data-theme="dark"] .switch-thumb {
+    left: 32px;
+  }
+
+  .switch-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card {
+
+    max-width: 600px;
+    min-width: 350px;
+    min-height: 500px;
+    
+  }
+
+  .card img {
+  min-width: 260px;
+  min-height: 250px;
+}
+
+
+td {
+  font-size: 0.9rem;
+}
+
+.container.redes {
+  padding: 0;
+}
+
 }
