@@ -1,7 +1,7 @@
 const slides = document.querySelectorAll('.carousel-slide');
 let currentIndex = 0;
 
-// ativa o primeiro slide imediatamente
+
 slides[currentIndex].classList.add('active');
 
 setInterval(() => {
